@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>欢迎登录</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<!--/*@thymesVar id="name" type="java.lang.String"*/-->
+<p>欢迎登录,${session.user.username}</p>
+
+
+<!--只有这种才能从session中取出来不知道为什么-->
+<span>欢迎登录:<div th:text="${session.user.getUsername()}"></div></span>
+</body>
+</html>
