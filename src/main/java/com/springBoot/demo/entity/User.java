@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class User {
     private Integer uid;
-    private String usernmae;
+    private String username;
     private String password;
     private Set<Role> roles=new HashSet<>();
 
@@ -18,11 +18,11 @@ public class User {
     }
 
     public String getUsernmae() {
-        return usernmae;
+        return username;
     }
 
     public void setUsernmae(String usernmae) {
-        this.usernmae = usernmae;
+        this.username = username;
     }
 
     public String getPassword() {
